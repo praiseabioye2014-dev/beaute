@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Contact | Fleur de Beauté</title>
+<meta name="description" content="Book an appointment, ask a question or say hello to the Fleur de Beauté team in Ilorin.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Playfair+Display:wght@500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header class="site-header" id="header">
+  <div class="container nav">
+    <a href="index.html" class="brand" aria-label="Fleur de Beauté home"><img src="https://res.cloudinary.com/bdzg7lac/image/upload/v1794181742/logo_cbsgyx.png" alt="" class="brand-logo"><span class="brand-name">Fleur de Beauté</span></a>
+    <button class="menu-toggle" id="menuToggle" aria-expanded="false" aria-controls="menu" aria-label="Toggle menu"><span></span><span></span><span></span></button>
+    <nav id="menu" class="menu">
+      <a href="index.html">Home</a>
+      <a href="services.html">Services</a>
+      <a href="gallery.html">Gallery</a>
+      <a href="about.html">About</a>
+      <a href="contact.html" class="active">Contact</a>
+      <a href="contact.html" class="btn btn-gold btn-sm menu-cta">Book Appointment</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <section class="page-hero">
+    <img class="page-hero-img" src="https://i.ibb.co/KcrNH6wH/60c9ad6731c34f6d284fae19977c045b-2.jpg" alt="" onerror="this.remove()">
+    <div class="container">
+      <h1>Get In Touch</h1>
+      <p>We’d love to hear from you. Book an appointment, ask a question or just say hello.</p>
+    </div>
+  </section>
+
+  <section class="section contact">
+    <div class="container contact-grid">
+
+      <div class="contact-form-wrap">
+        <h2 class="form-title">Send Us a Message</h2>
+        <!-- To send messages to a server, add the endpoint URL in data-endpoint (e.g. Formspree). Without it, the form opens the visitor's email app. -->
+        <form id="contactForm" class="form" novalidate data-endpoint="" data-email="fluerdebeaute@gmail.com">
+          <div class="field"><label for="name">Full Name <span class="req">*</span></label><input id="name" name="name" type="text" placeholder="Enter your name" autocomplete="name" required><small class="err" aria-live="polite"></small></div>
+          <div class="field"><label for="email">Email Address <span class="req">*</span></label><input id="email" name="email" type="email" placeholder="Enter your email" autocomplete="email" required><small class="err" aria-live="polite"></small></div>
+          <div class="field"><label for="phone">Phone Number <span class="req">*</span></label><input id="phone" name="phone" type="tel" placeholder="Enter your phone number" autocomplete="tel" required><small class="err" aria-live="polite"></small></div>
+          <div class="field"><label for="message">Message <span class="req">*</span></label><textarea id="message" name="message" rows="5" placeholder="How can we help you?" required></textarea><small class="err" aria-live="polite"></small></div>
+          <button type="submit" class="btn btn-gold">Send Message <span aria-hidden="true">→</span></button>
+          <p class="form-status" id="formStatus" role="status"></p>
+        </form>
+      </div>
+
+      <aside class="contact-info">
+        <ul class="info-list">
+          <li><span class="c-ic"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21s-7-6.2-7-11.5a7 7 0 1114 0C19 14.8 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.5"/></svg></span><div><h3>Visit Us</h3><p>8 Mustapha Osuolale Street,<br>Cele Apata Ayobo, Lagos State</p></div></li>
+          <li><span class="c-ic"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 4h4l2 5-2.5 1.500a11 11 0 005 5L15 13l5 2v4a2 2 0 01-2 2A16 16 0 013 6a2 2 0 012-2z"/></svg></span><div><h3>Call Us</h3><p><a href="tel:+2349133161475">+234 913 316 1475</a><br><a href="tel:+2348154650377">+234 815 465 0377</a></p></div></li>
+          <li><span class="c-ic"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 7l9 6 9-6"/></svg></span><div><h3>Email Us</h3><p><a href="mailto:fluerdebeaute@gmail.com">fluerdebeaute@gmail.com</a></p></div></li>
+          <li><span class="c-ic"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg></span><div><h3>Opening Hours</h3><p>Mon – Sat: 8:00 AM – 8:00 PM<br>Sunday: 10:00 AM – 6:00 PM</p></div></li>
+        </ul>
+        <!-- Replace this block with a Google Maps <iframe> when you have the embed link -->
+        <div class="map">
+          <img class="map-img" src="images/map.jpg" alt="" onerror="this.remove()">
+          <div class="map-pin"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 22s-7-6.2-7-12a7 7 0 1114 0c0 5.8-7 12-7 12z"/><circle cx="12" cy="10" r="2.5" fill="#fff"/></svg><p><b>Fleur de Beauté</b><br>Hair &amp; Makeup Studio</p></div>
+        </div>
+      </aside>
+
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="container footer-grid">
+    <div class="f-brand">
+      <a href="index.html" class="brand" aria-label="Fleur de Beauté home"><img src="https://res.cloudinary.com/bdzg7lac/image/upload/v1794181742/logo_cbsgyx.png" alt="" class="brand-logo"><span class="brand-name">Fleur de Beauté</span></a>
+      <p>Look beautiful. Feel amazing.</p>
+    </div>
+    <div><h4>Quick Links</h4><ul><li><a href="index.html">Home</a></li><li><a href="services.html">Services</a></li><li><a href="about.html">About</a></li><li><a href="contact.html">Contact</a></li></ul></div>
+    <div><h4>Follow Us</h4><ul class="social"><li><a href="#" aria-label="Instagram">IG</a></li><li><a href="#" aria-label="Facebook">FB</a></li><li><a href="#" aria-label="TikTok">TT</a></li><li><a href="#" aria-label="YouTube">YT</a></li></ul></div>
+    <div><h4>Get In Touch</h4><ul class="contact"><li> 8 Mustapha Osuolale Street, Cele Apata Ayobo, Lagos State</li><li><a href="tel:+2349133161475">+234 913 316 1475</a></li><li><a href="mailto:fluerdebeaute@gmail.com">fluerdebeaute@gmail.com</a></li></ul></div>
+  </div>
+  <div class="container footer-bottom"><span>© <span id="year">2026</span> Fleur de Beauté. All rights reserved.</span><em>Beauty looks good on you ♡</em></div>
+</footer>
+
+<script src="config.js" defer></script>
+<script src="main.js" defer></script>
+<script src="forms.js" defer></script>
+</body>
+</html>
